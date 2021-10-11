@@ -1,0 +1,18 @@
+{
+  "name"              : "山田事件也　-笑いあり、涙あり、シリアスありの謎解きゲーム",
+  "short_name"        : "山田事件也",
+  "description"       : "R3年度桐陰祭で大好評だった校内巡回型謎解きがWebアプリに！",
+  "start_url"         : "/",
+  "display"           : "standalone",
+  "background_color"  : "#ffbb00",
+  "theme_color"       : "#ffbb00",
+  "icons": [{
+      "src"           : "img/icon-192.png",
+      "sizes"         : "192x192",
+      "type"          : "image/png"
+    }, {
+      "src"           : "img/icon-256.png",
+      "sizes"         : "256x256",
+      "type"          : "image/png"
+  }]
+}
