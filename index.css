@@ -17,6 +17,10 @@ p{
     text-align: left;
 }
 
+header img{
+    width: 100%;
+}
+
 @media screen and (max-width:500px){
     body{
         color: rgb(153, 153, 153);
@@ -58,5 +62,6 @@ p{
     p{
         padding-left: 10%;
         padding-right: 10%;
+        font-size: large;
     }
 }
