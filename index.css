@@ -1,11 +1,28 @@
 
 @media screen and (max-width:500px){
-
+    body{
+        text-align: center;
+        background-color: #000;
+        color: rgb(153, 153, 153);
+    }
+    h1{
+        color: #ddd;
+        font-family: 'New Tegomin', serif;
+        font-size: 150%;
+    }
+    p{
+        text-align: left;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .tdtxt{
+        font-size: 10px;
+    }
 }
 @media screen and (min-width:501px) {
     body{
         text-align: center;
-        background-color: #404470;
+        background-color: #000;
         color: #222;
     }
     .body{
@@ -15,6 +32,7 @@
     }
     h1{
         color: #ddd;
+        font-family: 'New Tegomin', serif;
     }
     p{
         text-align: left;
