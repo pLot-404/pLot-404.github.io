@@ -1,0 +1,26 @@
+@media screen and (max-width:500px){
+    .sp{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .pc{
+        display: none;
+    }
+}
+
+@media screen and (min-width:501px) {
+    .pc{
+        width: 100%;
+        display: block;
+        text-align: center
+    }
+    .sp{
+        display: none;
+    }
+}
+
+body{
+    text-align: center;
+    background-color: rgb(105, 7, 7);
+}
