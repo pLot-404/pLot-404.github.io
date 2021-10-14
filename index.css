@@ -1,45 +1,62 @@
+body{
+    text-align: center;
+    background-color: #000;
+    font-family: 'Klee One', cursive;
+}
+h1{
+    color: #ddd;
+    font-family: 'New Tegomin', serif;
+}
+h2,h3{
+    font-family: 'Princess Sofia', cursive;
+}
+.tdtxt{
+    font-size: 10px;
+}
+p{
+    text-align: left;
+}
 
 @media screen and (max-width:500px){
     body{
-        text-align: center;
-        background-color: #000;
         color: rgb(153, 153, 153);
     }
     h1{
-        color: #ddd;
-        font-family: 'New Tegomin', serif;
-        font-size: 150%;
+        font-size: 38px;
+    }
+    h2{
+        font-size: 30px;
     }
     p{
-        text-align: left;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-    .tdtxt{
-        font-size: 10px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
+
 @media screen and (min-width:501px) {
     body{
-        text-align: center;
-        background-color: #000;
-        color: #222;
+        color: rgb(211, 209, 209);
     }
     .body{
+        box-shadow: 0 20px 40px 0 rgba(164, 147, 238, 0.548);
         margin-right: 10%;
         margin-left: 10%;
-        background-color: rgba(200,200,200,0.5);
+        background-color: rgba(245, 244, 244, 0.219);
+    }
+    .block{
+        box-shadow: 0 10px 10px 0 rgba(109, 100, 148, 0.349);
     }
     h1{
-        color: #ddd;
-        font-family: 'New Tegomin', serif;
+        font-size: 64px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
     }
     p{
-        text-align: left;
         padding-left: 10%;
         padding-right: 10%;
-    }
-    .tdtxt{
-        font-size: 10px;
     }
 }
