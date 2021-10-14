@@ -7,6 +7,21 @@
     .pc{
         display: none;
     }
+    button{
+        width: 60%;
+        height: 30%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-color: brown;
+        color: gold;
+        font-family: 'Allison',cursive;
+    }
+    button p{
+        font-size: 300%;
+        margin: 0%;
+    }
 }
 
 @media screen and (min-width:501px) {
@@ -17,6 +32,22 @@
     }
     .sp{
         display: none;
+    }
+    button{
+        width: 25%;
+        height: 25%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 3%;
+        background-color: brown;
+        color: gold;
+        font-family: 'Allison',cursive;
+    }
+    button p{
+        font-size: 80px;
+        margin: 0%;
     }
 }
 
