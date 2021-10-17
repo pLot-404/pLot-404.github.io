@@ -22,11 +22,11 @@ header img{
 }
 
 a:link{
-    color:#ffffff;
+    color:#fff;
 }
 
-a:hover{
-    color:#333333;
+a:visited{
+    color:#ccc;
 }
 
 @media screen and (max-width:500px){
