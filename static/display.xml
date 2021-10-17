@@ -12,4 +12,8 @@
             <button onclick="Setting()"><p>Setting</p></button>
         </start>
     </textarea>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> ca3ef65424736704f86c74d0abd89fb29c432e70

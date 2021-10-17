@@ -21,6 +21,14 @@ header img{
     width: 100%;
 }
 
+a:link{
+    color:#fff;
+}
+
+a:visited{
+    color:#ccc;
+}
+
 @media screen and (max-width:500px){
     body{
         color: rgb(153, 153, 153);
