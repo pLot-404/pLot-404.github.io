@@ -5,7 +5,7 @@ function Setting(){
     $("body").html = "<p>ここにListを挿入</p>"
 }
 if(localStorage.getItem(['history'])===null){
-    locasStorage.setItem(['history'],[0]);
+    localStorage.setItem(['history'],[0]);
 }
 let static_src=[
     "static/display.xml"
