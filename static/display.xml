@@ -2,8 +2,8 @@
 <html>
     <imgarea>
         <start>
-            <img class="sp" src="img/icon-256.png">
-            <img class="pc" src="img/80132.jpg">
+            <img class="sp" src="img/icon-256.png"/>
+            <img class="pc" src="img/80132.jpg"/>
         </start>
     </imgarea>
     <textarea>
