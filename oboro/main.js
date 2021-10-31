@@ -11,7 +11,7 @@ let bgmls = {
   "se3":"bgm/mask.mp3",
   "se4":"bgm/manymask.mp3",
   "se5":"bgm/窓をノック1.mp3",
-  "se6":"bgm/ドアをドンドン叩く.mp3",
+  "se6":"bgm/gh1_4__=4 (1).mp3",
   "se7":"bgm/ガラスにひびが入る.mp3",
   "se8":"bgm/ガラスが割れる1.mp3"
 };
