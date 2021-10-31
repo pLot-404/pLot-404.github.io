@@ -17,7 +17,14 @@ $(function(){
         scroll_effect();
         play_music();
     });
-    
+
+    $(".load-up").on("click",".box17",function(){
+      console.log("clicked")
+      bgm.src = bgmls["music1"];
+      bgm.load();
+      bgm.play();
+    });
+
     $('.contents').each(function(i, elem){
         let contentsPOS = $(elem).offset().top;
         $(window).on('load scroll resize', function(){
@@ -32,14 +39,12 @@ $(function(){
             }
         });
     });
+
+    document.querySelector(".box17").click();
 });
 
-function allow(){
-  console.log("clicked")
-  bgm.src = bgmls["music1"];
-  bgm.load();
-  bgm.play();
-}
+
+
 
 //ふわっとロード
 function load_effect(){
