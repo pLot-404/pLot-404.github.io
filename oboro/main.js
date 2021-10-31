@@ -29,7 +29,7 @@ $(function(){
         });
     });
 });
- 
+
 //ふわっとロード
 function load_effect(){
     let tt = $(window).scrollTop();
