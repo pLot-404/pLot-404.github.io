@@ -5,10 +5,19 @@ let bgmls = {
   "music4":"bgm/forth.mp3",
   "music5":"bgm/fifth.mp3",
   "music6":"bgm/sixth.mp3",
-  "music7":"bgm/second.mp3"
+  "music7":"bgm/second.mp3",
+  "se1":"bgm/close.mp3",
+  "se2":"bgm/tryopen.mp3",
+  "se3":"bgm/mask.mp3",
+  "se4":"bgm/manymask.mp3",
+  "se5":"bgm/窓をノック1.mp3",
+  "se6":"bgm/ドアをドンドン叩く.mp3",
+  "se7":"bgm/ガラスにひびが入る.mp3",
+  "se8":"bgm/ガラスが割れる1.mp3"
 };
 
 let bgm = new Audio();
+let wbgm;
 
 //表示イベント
 $(function(){
@@ -18,7 +27,7 @@ $(function(){
         play_music();
     });
 
-    $(".load-up").on("click",".box17",function(){
+    $(".load-up").on("click",".box",function(){
       console.log("clicked")
       bgm.src = bgmls["music1"];
       bgm.load();
@@ -39,8 +48,6 @@ $(function(){
             }
         });
     });
-
-    document.querySelector(".box17").click();
 });
 
 
@@ -92,13 +99,33 @@ function play_music(){
     let num = this.id;
     let end = $(this).offset().top + $(this).height();
     let clsls = $(this).attr('class').split(" ");
-    if(tt > yy && clsls.indexOf('done') == -1 && tt <= end){
+    if(tt > yy && clsls.indexOf('done') == -1 && tt <= end && num != wbgm){
+      console.log(num);
+      $(this).addClass("done");
+      bgm.pause();
+      bgm.src = bgmls[num];
+      wbgm = num
+      bgm.load();
+      bgm.play();
+    }
+  });
+
+  $(".se").each(function(){
+    let yy = $(this).offset().top;
+    let num = this.id;
+    let clsls = $(this).attr('class').split(" ");
+    if(tt > yy && clsls.indexOf('done') == -1){
       console.log(num);
       $(this).addClass("done");
       bgm.pause();
       bgm.src = bgmls[num];
       bgm.load();
       bgm.play();
+      bgm.addEventListener("ended",function(){
+        bgm.src = bgmls[wbgm];
+        bgm.load();
+        bgm.play();
+      });
     }
   });
 }
