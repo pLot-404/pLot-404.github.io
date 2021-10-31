@@ -1,0 +1,116 @@
+@media screen and (max-width:500px){
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: block;
+    }
+    .exp{
+        font-size: 5%;
+    }
+    .scroll-up{
+        font-size:15%;
+    }
+    button{
+      height: 250px;
+    }
+}
+
+@media screen and (min-width:501px){
+    h1{
+        font-size: 64px;
+    }
+    .sp{
+        display: none;
+    }
+    .pc{
+        display: block;
+    }
+    button{
+      height: 500px;
+    }
+}
+
+body{
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-family: 'Klee One', cursive;
+    font-weight: bold;
+}
+
+h1{
+    font-family: 'New Tegomin', serif;
+}
+
+/*スクロールアニメーション*/
+.scroll-up{
+    opacity: 0;
+    transform: translateY(200px)/*スクロールアップする距離*/;
+    transition: all 1s/*処理にかかる時間*/;
+}
+.scroll-up.done{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+.scroll-appear{
+    opacity: 0;
+    transform: translateY(100px)/*スクロールアップする距離*/;
+    transition: all 0s/*処理にかかる時間*/;
+}
+.load-up{
+    opacity: 0;
+    transform: translateY(100px)/*スクロールアップする距離*/;
+    transition: all 2s/*処理にかかる時間*/;
+}
+.load-up.done{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.its{
+  width:100%;
+}
+
+/*背景変更*/
+/* init */
+.background {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    position: fixed;
+    background-position: center center;
+    opacity: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease 0s;
+}
+.show .background {
+    opacity: 1;
+}
+.contents .wrap {
+    padding: 40vh 0 60vh;
+    position: relative;
+    z-index: 2;
+}
+/* design*/
+#content01_bg {background-image: url(img/seen1.png);}
+#content02_bg {background-image: url(img/seen2.png);}
+#content03_bg {background-image: url(img/seen3.png);}
+#content04_bg {background-image: url(img/seen4.png);}
+#contentn_bg{background-image: url(img/canvas.png);}
+.text-box {
+    color: white;
+    text-align: center;
+    font-family: 'Klee One', cursive;
+    font-weight: bold;
+}
+button{
+  margin: auto;
+  width: 80%;
+  font-family: 'New Tegomin', serif;
+  font-size: 700%;
+  background-color: #000;
+  color: #eee;
+}
