@@ -1,19 +1,13 @@
 <? xml version="1.0" encoding="utf-8" ?>
-<html>
-    <imgarea>
-        <start>
-            <img class="sp" src="img/icon-256.png">
-            <img class="pc" src="img/80132.jpg">
-        </start>
-    </imgarea>
-    <textarea>
-        <start>
-            <button onclick="Play()"><p>Play</p></button>
-            <button onclick="Setting()"><p>Setting</p></button>
-        </start>
-    </textarea>
-<<<<<<< HEAD
-</html>
-=======
-</html>
->>>>>>> ca3ef65424736704f86c74d0abd89fb29c432e70
+<imgarea>
+    <start>
+        <img class="sp" src="img/icon-256.png">
+        <img class="pc" src="img/80132.jpg">
+    </start>
+</imgarea>
+<textarea>
+    <start>
+        <button onclick="Play()"><p>Play</p></button>
+        <button onclick="Setting()"><p>Setting</p></button>
+    </start>
+</textarea>
