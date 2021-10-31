@@ -114,7 +114,7 @@ function play_music(){
     let yy = $(this).offset().top;
     let num = this.id;
     let clsls = $(this).attr('class').split(" ");
-    if(tt > yy && clsls.indexOf('done') == -1){
+    if(tt > yy - 100 && clsls.indexOf('done') == -1){
       console.log(num);
       $(this).addClass("done");
       bgm.pause();
