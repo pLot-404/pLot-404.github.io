@@ -104,6 +104,7 @@ h1{
 .text-box {
     text-align: center;
     font-family: 'Klee One', cursive;
+    font-size:100%;
     font-weight: bold;
 }
 
