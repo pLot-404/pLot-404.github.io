@@ -3,15 +3,19 @@ let bgmls = {
   "music2":"bgm/second.mp3",
   "music3":"bgm/third.mp3",
   "music4":"bgm/forth.mp3",
-  "music5":"bgm/fifth.mp3"
+  "music5":"bgm/fifth.mp3",
+  "music6":"bgm/sixth.mp3",
+  "music7":"bgm/second.mp3"
 };
+
+let bgm = new Audio();
 
 //表示イベント
 $(function(){
     load_effect();
     $(window).scroll(function(){
         scroll_effect();
-        //play_music();
+        play_music();
     });
     
     $('.contents').each(function(i, elem){
@@ -29,6 +33,13 @@ $(function(){
         });
     });
 });
+
+function allow(){
+  console.log("clicked")
+  bgm.src = bgmls["music1"];
+  bgm.load();
+  bgm.play();
+}
 
 //ふわっとロード
 function load_effect(){
@@ -69,26 +80,20 @@ function scroll_effect(){
     });
 }
 
-
-let bgm = [];
-let nowbgm;
-
-function play_music(){ //musicクラスのIDに合わせた音楽を流す
+function play_music(){
   let tt = $(window).scrollTop();
-  $('.music').each(function(){
+  $(".music").each(function(){
     let yy = $(this).offset().top;
-    let end = Math.floor($(this).offset().top + $(this).height());
-    let number = this.id;
-    let bgma = new Audio(bgmls[number]);
-    bgma.volume = 0.1;
+    let num = this.id;
+    let end = $(this).offset().top + $(this).height();
     let clsls = $(this).attr('class').split(" ");
-    if(tt + 100 > yy && clsls.indexOf('done') == -1 && tt <= end){
+    if(tt > yy && clsls.indexOf('done') == -1 && tt <= end){
+      console.log(num);
       $(this).addClass("done");
-      bgma.play();
-      bgm.push(bgma);
-    }else if(tt > end){
-      console.log("end");
-      bgm[bgm.length-1].pause();
+      bgm.pause();
+      bgm.src = bgmls[num];
+      bgm.load();
+      bgm.play();
     }
   });
 }

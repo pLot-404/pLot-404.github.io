@@ -100,17 +100,10 @@ h1{
 #content03_bg {background-image: url(img/seen3.png);}
 #content04_bg {background-image: url(img/seen4.png);}
 #contentn_bg{background-image: url(img/canvas.png);}
+
 .text-box {
     color: white;
     text-align: center;
     font-family: 'Klee One', cursive;
     font-weight: bold;
-}
-button{
-    margin: auto;
-    width: 80%;
-    font-family: 'New Tegomin', serif;
-    font-size: 700%;
-    background-color: #000;
-    color: #eee;
 }
