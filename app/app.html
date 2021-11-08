@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>スタートメニュー</title>
+    <title>「山田事件也」プレイ</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="../manifest.json">
     <link type="text/css" rel="stylesheet" href="app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     <script>
         //Service Worker入れてPWA化
         if('serviceWorker' in navigator){
-            navigator.serviceWorker.register('sw.js').then(function(){
+            navigator.serviceWorker.register('../sw.js').then(function(){
                 console.log("Service Worker is registered!!");
             });
         }
