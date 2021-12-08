@@ -2,16 +2,16 @@
   "name"              : "山田事件也",
   "short_name"        : "山田事件也",
   "description"       : "R3年度桐陰祭で大好評だった校内巡回型謎解きがWebアプリに！",
-  "start_url"         : "/app/app.html",
+  "start_url"         : "/app/",
   "display"           : "standalone",
   "background_color"  : "#6a1917",
   "theme_color"       : "#6a1917",
   "icons": [{
-      "src"           : "img/icon-192.png",
+      "src"           : "/img/icon-192.png",
       "sizes"         : "192x192",
       "type"          : "image/png"
     }, {
-      "src"           : "img/icon-256.png",
+      "src"           : "/img/icon-256.png",
       "sizes"         : "256x256",
       "type"          : "image/png"
   }]
