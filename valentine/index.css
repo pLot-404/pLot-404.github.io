@@ -1,18 +1,3 @@
-@font-face {
-    font-family: "New Tegomin";
-    src: url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
-}
-
-@font-face {
-    font-family: "Princess Sofia";
-    src: url("https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap");
-}
-
-@font-face {
-    font-family: "Klee One";
-    src: url("https://fonts.googleapis.com/css2?family=Klee+One&display=swap");
-}
-
 @media screen and (max-width:500px) {
     .exp {
         font-size: 70%;
