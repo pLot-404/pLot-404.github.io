@@ -1,7 +1,7 @@
 {
-  "name"              : "山田事件也",
-  "short_name"        : "山田事件也",
-  "description"       : "R3年度桐陰祭で大好評だった校内巡回型謎解きがWebアプリに！",
+  "name"              : "pLot_404",
+  "short_name"        : "pLot_404",
+  "description"       : "Web上で楽しめる謎解きゲーム！",
   "start_url"         : "/app/",
   "display"           : "standalone",
   "background_color"  : "#6a1917",
