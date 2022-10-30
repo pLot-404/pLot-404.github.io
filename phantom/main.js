@@ -171,7 +171,7 @@ function scroll_effect() {
     if (tt > yy - hh/2) {
       setTimeout(function(){
         window.location.href = '/'
-      },5000)
+      },3000)
     }
   });
 }
