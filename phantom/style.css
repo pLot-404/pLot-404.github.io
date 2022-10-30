@@ -1,172 +1,195 @@
-@media screen and (max-width:500px){
-    .pc{
-        display: none;
-    }
-    .sp{
-        display: block;
-    }
-    .exp{
-        font-size: 70%;
-    }
-    .scroll-up{
-        font-size:80%;
-    }
-    button{
-        height: 250px;
-    }
+@media screen and (max-width: 500px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  .exp {
+    font-size: 70%;
+  }
+  .scroll-up {
+    font-size: 80%;
+  }
+  button {
+    height: 250px;
+  }
 }
 
-@media screen and (min-width:501px){
-    h1{
-        font-size: 64px;
-    }
-    .sp{
-        display: none;
-    }
-    .pc{
-        display: block;
-    }
-    button{
-        height: 500px;
-    }
+@media screen and (min-width: 501px) {
+  h1 {
+    font-size: 64px;
+  }
+  .sp {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
+  button {
+    height: 500px;
+  }
 }
 
-body{
-    background-color: #000;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'Klee One', cursive;
-    font-weight: bold;
+body {
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Klee One", cursive;
+  font-weight: bold;
 }
 
-h1{
-    font-family: 'New Tegomin', serif;
+h1 {
+  font-family: "New Tegomin", serif;
 }
 
 /*スクロールアニメーション*/
-.scroll-up{
-    opacity: 0;
-    transform: translateY(200px)/*スクロールアップする距離*/;
-    transition: all 0.8s/*処理にかかる時間*/;
-    padding-top: 5vh;
+.scroll-up {
+  opacity: 0;
+  transform: translateY(200px) /*スクロールアップする距離*/;
+  transition: all 0.8s /*処理にかかる時間*/;
+  padding-top: 5vh;
 }
-.scroll-up.done{
-    opacity : 1;
-    transform : translate(0, 0);
-    padding-top: 5vh;
+.scroll-up.done {
+  opacity: 1;
+  transform: translate(0, 0);
+  padding-top: 5vh;
 }
-.scroll-appear{
-    opacity: 0;
-    transform: translateY(100px)/*スクロールアップする距離*/;
-    transition: all 0s/*処理にかかる時間*/;
-    padding-top: 5vh;
-    padding-bottom: 25vh;
+.scroll-appear {
+  opacity: 0;
+  transform: translateY(100px) /*スクロールアップする距離*/;
+  transition: all 0s /*処理にかかる時間*/;
+  padding-top: 5vh;
+  padding-bottom: 25vh;
 }
-.scroll-done{
-    opacity : 1;
-    transform : translate(0, 0);
-    padding-top: 5vh;
-    padding-bottom: 25vh;
+.scroll-done {
+  opacity: 1;
+  transform: translate(0, 0);
+  padding-top: 5vh;
+  padding-bottom: 25vh;
 }
-.load-up{
-    opacity: 0;
-    transform: translateY(100px)/*スクロールアップする距離*/;
-    transition: all 2s/*処理にかかる時間*/;
+.load-up {
+  opacity: 0;
+  transform: translateY(100px) /*スクロールアップする距離*/;
+  transition: all 2s /*処理にかかる時間*/;
 }
-.load-up.done{
-    opacity : 1;
-    transform : translate(0, 0);
+.load-up.done {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
-.its{
-    width:100%;
+.its {
+  width: 100%;
 }
 
 /*背景変更*/
 /* init */
 .background {
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    position: fixed;
-    background-position: center center;
-    opacity: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: all 0.5s ease 0s;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  position: fixed;
+  background-position: center center;
+  opacity: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease 0s;
 }
 .show .background {
-    opacity: 1;
+  opacity: 1;
 }
 .contents .wrap {
-    /* padding: 40vh 0 60vh; */
-    position: relative;
-    z-index: 2;
+  /* padding: 40vh 0 60vh; */
+  position: relative;
+  z-index: 2;
 }
 /* design*/
-#content01_bg {background-image: url(img/seen1.png);}
-#content02_bg {background-image: url(img/seen2.png);}
-#content03_bg {background-image: url(img/seen3.png);}
-#content04_bg {background-image: url(img/seen4.png);}
-#contentn_bg{background-image: url(img/canvas.png);}
+#content01_bg {
+  background-image: url(img/seen1.png);
+}
+#content02_bg {
+  background-image: url(img/seen2.png);
+}
+#content03_bg {
+  background-image: url(img/seen3.png);
+}
+#content04_bg {
+  background-image: url(img/seen4.png);
+}
+#contentn_bg {
+  background-image: url(img/canvas.png);
+}
 
 .text-box {
-    text-align: center;
-    font-family: 'Klee One', cursive;
-    font-size:100%;
-    font-weight: bold;
+  text-align: center;
+  font-family: "Klee One", cursive;
+  font-size: 100%;
+  font-weight: bold;
 }
 
-.box{
-    margin:2em 0;
-    position: relative;
-    padding: 0.5em 1.5em;
-    border-top: solid 2px rgb(255, 255, 255);
-    border-bottom: solid 2px rgb(255, 255, 255);
+.box {
+  margin: 2em 0;
+  position: relative;
+  padding: 0.5em 1.5em;
+  border-top: solid 2px rgb(255, 255, 255);
+  border-bottom: solid 2px rgb(255, 255, 255);
 }
-.box:before, .box:after{
-    content: '';
-    position: absolute;
-    top: -10px;
-    width: 2px;
-    height: -webkit-calc(100% + 20px);
-    height: calc(100% + 20px);
-    background-color: rgb(255, 255, 255);
+.box:before,
+.box:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 2px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: rgb(255, 255, 255);
 }
-.box:before {left: 10px;}
-.box:after {right: 10px;}
+.box:before {
+  left: 10px;
+}
+.box:after {
+  right: 10px;
+}
 .box p {
-    margin: 0; 
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 
 #fiction {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 hr {
-    margin: 20vh;
-    z-index: 100;
-    position: relative;
+  margin: 20vh;
+  z-index: 100;
+  position: relative;
 }
 
 #chakusin {
-    display: none;
-    position: fixed;
-    top: 0;
-    z-index: 5;
-    padding-bottom: 10vh;
-    margin: auto;
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  padding-bottom: 10vh;
+  margin: auto;
+  width: 100%;
 }
 
 #break {
-    display: none;
-    position: fixed;
-    top: 10vh;
-    z-index: 5;
-    padding-bottom: 10vh;
-    margin: auto;
+  display: none;
+  position: fixed;
+  top: 10vh;
+  z-index: 5;
+  padding-bottom: 10vh;
+  margin: auto;
+  width: 100%;
+}
+
+.break {
+    padding-bottom: 20vh;
+}
+.chakusin {
+    padding-bottom: 20vh;
 }
